@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1c2331, #0c0e13);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#game-area {
+    width: 600px;
+    height: 400px;
+    border: 2px solid #00ffff;
+    position: relative;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(48, 207, 208, 0.5);
+}
+
+#hoverboard {
+    width: 60px;
+    height: 30px;
+    background: linear-gradient(45deg, #ff00cc, #30cfd0);
+    position: absolute;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 204, 0.7);
+}
+
+#timer, #score {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+#start-btn, #play-again-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #ff00cc, #30cfd0);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.1s;
+}
+
+#start-btn:hover, #play-again-btn:hover {
+    transform: scale(1.05);
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.stars {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: white;
+    z-index: -1;
+}
